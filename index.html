@@ -10,25 +10,35 @@
 </head>
 
 <body>
-        <div>drty</div>
+
   <div id="app"></div>
-  <div>drty</div>
+
+  
   <script type="text/babel">
 
-//   function MyComp() {
-//       return (
-//           <div>
-//           h1
-//           </div>
-//       )
-//   }
+  function MyComp() {
+      return (
+          <div>
+            <h1>oto ja, komponent!</h1>
+            <h2>Czesc!!!</h2>
+          </div>
+      )
+  }
+
+  function MySecComp() {
+      return (
+          <div>
+            <h1>drugi komponent</h1>
+          </div>
+      )
+  }
 
 
     ReactDOM.render(
-        <div>
-      <h1>!!!.ooio.!!!</h1>
-      <h2>!!!.dvsvvwsvwvwvw</h2>
-        </div>,
+      <div>
+      <MyComp />
+      <MySecComp />
+      </div>,
       document.getElementById('app')
     );
   </script>
